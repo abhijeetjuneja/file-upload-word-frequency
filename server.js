@@ -7,7 +7,7 @@ var responseGenerator = require('./libs/responseGenerator');
 var port        = process.env.PORT || 3000;
 var path = require ('path');
 var cors = require('cors')
-app.use(express.static(path.join(__dirname, './../client')));
+app.use(express.static(path.join(__dirname, '/client')));
 // get our request parameters
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -51,7 +51,7 @@ fs.readdirSync('./app/controllers').forEach(function(file){
 var apiRoutes = express.Router();
 
 app.get('*',function(req,res){
-    res.sendFile(path.join(__dirname, './../client/index.html'));
+    res.sendFile(path.join(__dirname, '/client/index.html'));
 });
 
 //Error handler
