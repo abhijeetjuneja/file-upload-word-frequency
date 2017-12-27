@@ -1,0 +1,25 @@
+{
+  "name": "fileUpload",
+  "version": "1.0.0",
+  "description": "N most common",
+  "scripts": {
+    "deploy": "npm test && git push heroku master",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "~1.9.2",
+    "express": "~4.9.8",
+    "morgan": "~1.5.0",
+    "nodemon": "latest",
+    "events": "latest",
+    "cors":"latest",
+    "toastr":"latest",
+    "node-fetch":"latest",
+    "bluebird":"latest"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "6.11.0",
+    "npm": "3.10.10"
+  }
+}
